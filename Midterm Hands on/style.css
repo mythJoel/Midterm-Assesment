@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      "site-title nav1 nav2 nav3"
+      "post-title post-title post-title side-bar"
+      "post-meta main-content main-content side-bar"
+      "post-meta main-content main-content other-stuffs"
+      "main-content-image main-content-image ads other-stuffs"
+      "footer footer footer footer";
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    gap: 10px;
+    padding: 20px;
+  }
+  
+  .site-title {
+    grid-area: site-title;
+    background-color: yellow;
+  }
+  
+  .nav1, .nav2, .nav3 {
+    background-color: pink;
+  }
+  
+  .nav1 {
+    grid-area: nav1;
+  }
+  .nav2 {
+    grid-area: nav2;
+  }
+  .nav3 {
+    grid-area: nav3;
+  }
+  
+  .post-title {
+    grid-area: post-title;
+    background-color: lightblue;
+  }
+  
+  .post-meta {
+    grid-area: post-meta;
+    background-color: lightgreen;
+  }
+  
+  .main-content {
+    grid-area: main-content;
+    background-color: lightgray;
+  }
+  
+  .side-bar {
+    grid-area: side-bar;
+    background-color: orange;
+  }
+  
+  .ads {
+    grid-area: ads;
+    background-color: darkgreen;
+  }
+  
+  .other-stuffs {
+    grid-area: other-stuffs;
+    background-color: violet;
+  }
+  
+  .main-content-image {
+    grid-area: main-content-image;
+    background-color: yellow;
+  }
+  
+  .footer {
+    grid-area: footer;
+    background-color: brown;
+    text-align: center;
+    padding: 10px;
+    color: white;
+  }
+  
+  div {
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    text-align: left;
+  }
